@@ -311,6 +311,10 @@ a{
 
 }
 
+.gallery__view-new{
+    display: none;
+}
+
 .gallery__view::before{
     content: "";
     position: absolute;
@@ -537,11 +541,16 @@ a{
         gap: 18px;
     }
 
-    
+    .hero{
+        margin-top: 35px;
+        justify-content: center;
+    }
 
     .hero__slider{
-       width: 244px;
-       margin-left: 0;
+        width: 244px;
+        display: flex;
+        justify-content: center;
+        margin-left: unset;
     }
 
     .slider-img{
@@ -551,15 +560,131 @@ a{
     .prev,
     .next{
     display: block;
+    margin-bottom: 11%;
     }
 
     .slider-container{
         gap: 0;
         width: 306px;
     }
-    
+
     .main-img{
         width: 244px;
         height: 310px;
+    }
+
+    .images-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .descr-container{
+        margin-left: 14px;
+        margin-top: 73px;
+    }
+
+    .descr-title{
+        font-size: 26px;
+    }
+
+    .descr-text{
+        padding-top: 20px;
+        padding-right: 31px;
+    }
+
+    .descr-colors{
+        font-size: 16px;
+        margin-top: 9px;
+    }
+
+    .colors-container{
+        gap: 24px
+    }
+
+    .descr-sizes{
+        font-size: 16px;
+        margin-top: 33px;
+    }
+
+    .descr-size{
+        font-size: 14px;
+    }
+
+    .size-container{
+        gap: 26px;
+    }
+
+    .descr-price{
+        margin-top: 29px;
+        
+    }
+
+    .descr-button{
+        margin-top: 29px;
+    }
+
+    .gallery__title{
+        font-size: 26px;
+    }
+
+    .gallery__view{
+        display: none;
+    }
+
+    .gallery__container{
+        margin: 0 16px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .gallery-img{
+        width: 130px;
+        height: 160px;
+    }
+
+    .item-title{
+        font-size: 16px;
+        margin-top: 6px;
+    }
+
+    .item-price{
+        font-size: 14px;
+    }
+
+    .gallery-items{
+        gap: 28px;
+        margin-top: 35px;
+        row-gap: 23px;
+    }
+
+    .gallery__view-new{
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        color: #151C22;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+        margin-top: 29px;
+    }
+
+    .gallery__view-new::before{
+        content: "";
+        position: absolute;
+        width: 23%;
+        height: 2px;
+        height: 2px;
+        background-color: #151C22;
+        top: 21px;
+    }
+
+    .gallery__view-new-container{
+        display: flex;
+        justify-content: center;
+        
     }
 }
