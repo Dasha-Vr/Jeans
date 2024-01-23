@@ -1,3 +1,7 @@
+html{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
 }
@@ -537,6 +541,7 @@ a{
 
     .hero__slider{
        width: 244px;
+       margin-left: 0;
     }
 
     .slider-img{
@@ -553,4 +558,8 @@ a{
         width: 306px;
     }
     
+    .main-img{
+        width: 244px;
+        height: 310px;
+    }
 }
