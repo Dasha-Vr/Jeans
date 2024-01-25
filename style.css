@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+    
 }
 
 body{
@@ -28,12 +29,13 @@ a{
 }
 
 .container{
-    max-width: 1366px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-
+    overflow-x: hidden;
+    max-width: 1366px;
+    margin: 0 auto;
 }
+
 
 .header__container{
     display: flex;
@@ -55,20 +57,14 @@ a{
     align-items: center;
     gap: 35px;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
 }
 
 
 .header__nav-item{
     list-style-type: none;
-    color: #151C22;
-    font-family: "Work Sans";
-    font-size: 16px;
+    font: 500 16px/1 "Work Sans";
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
-    
 }
 
 .header__nav-link{
@@ -90,8 +86,8 @@ a{
 }
 
 .hero__description{
-    background-color: #F1F2F4;
     max-width: 668px;
+    background-color: #F1F2F4;
     margin-bottom: 4px;
 }
 
@@ -105,14 +101,13 @@ a{
 .images-container{
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
     justify-content: space-between;
     row-gap: 21px;
+    width: 400px;
 }
 
 .descr-container{
-    margin-left: 70px;
-    margin-top: 60px;
+    margin: 60px 0 0 70px;
 }
 
 .slides{
@@ -128,7 +123,6 @@ a{
 .slider-img{
     max-width: 85px;
     max-height: 113px;
-    /* width: calc(25% - 20px); */
 }
 
 
@@ -147,25 +141,20 @@ a{
 
 
 .descr-title{
-    color: #151C22;
-    font-family: "Work Sans";
-    font-size: 32px;
+    font: 700 32px/1 "Work Sans";
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
+    color: #151C22;
     margin: 0;
     
 }
 
 .descr-text{
-    color: #151C22;
-    font-family: "Work Sans";
-    font-size: 16px;
+    font: 400 16px/1 "Work Sans";
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
-    padding-right: 228px;
-    padding-top: 29px;
+    color: #151C22;
+    padding: 29px 228px 0 0;
 }
 
 .colors-container{
@@ -173,15 +162,12 @@ a{
     align-items: center;
     gap: 29px;
     margin-top: 21px;
-    
 }
 
 .descr-colors{
     color: #151C22;
-    font-family: "Work Sans";
-    font-size: 18px;
+    font: 500 18px/1 "Work Sans";
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
     margin-top: 46px;
 }
@@ -217,21 +203,17 @@ a{
 
 .descr-sizes{
     display: flex;
+    font: 500 18px/1 "Work Sans";
     color: #151C22;
-    font-family: "Work Sans";
-    font-size: 18px;
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
     margin-top: 36px
 }
 
 .descr-size{
     color: #727A82;
-    font-family: "Work Sans";
-    font-size: 18px;
+    font: 500 18px/1 "Work Sans";
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
 }
 
@@ -241,22 +223,18 @@ a{
 
 .descr-price{
     color: #151C22;
-    font-family: "Work Sans";
-    font-size: 18px;
+    font: 700 18px/1 "Work Sans";
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
     margin-top: 32px;
 }
 
 
 .descr-button{
-    color: #FFF;
-    font-family: "Work Sans";
-    font-size: 16px;
+    font: 700 16px/1 "Work Sans";
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
+    color: #FFFFFF;
     background-color: #151C22;
     border: none;
     padding: 23px 55.5px;
@@ -265,8 +243,7 @@ a{
 
 
 .gallery{
-    margin-top: 122px;
-    margin-bottom: 126px;
+    margin: 122px 0 126px 0;
 }
 
 .gallery__container{
@@ -282,28 +259,26 @@ a{
 
 
 .gallery-items{
+    justify-content: center;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     margin-top: 61px;
+
 }
 
 .gallery__title{
+    font: 700 32px/1 "Work Sans";
     color: #151C22;
-    font-family: "Work Sans";
-    font-size: 32px;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
 }
 
 .gallery__view{
     position: relative;
+    font: 500 18px/1 "Work Sans";
     color: #151C22;
-    font-family: "Work Sans";
-    font-size: 18px;
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
     text-decoration: none;
     margin-right: 5px;
@@ -320,26 +295,22 @@ a{
     width: 113%;
     right: -5px;
     height: 2px;
-    background-color: #151C22;
     top: 21px;
+    background-color: #151C22;
 }
 
 .item-title{
     color: #151C22;
-    font-family: "Work Sans";
-    font-size: 18px;
+    font: 500 18px/1 "Work Sans";
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
     margin-top: 17px;
 }
 
 .item-price{
     color: #151C22;
-    font-family: "Work Sans";
-    font-size: 16px;
+    font: 700 16px/1 "Work Sans";
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
     margin-top: 7px;
 }
@@ -347,7 +318,6 @@ a{
 
 .footer{
     background-color: #151C22;
-    
 }
 
 .footer__container{
@@ -374,16 +344,13 @@ a{
     display: flex;
     gap: 31px;
     flex-wrap: wrap;
-    margin-left: 10px;
-    margin-top: 32px;
+    margin: 32px 0 0 10px;
 }
 
 .footer__menu-item{
+    font: 500 18px/1 "Work Sans";
     color: #FFF;
-    font-family: "Work Sans";
-    font-size: 18px;
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
 }
 
@@ -395,6 +362,21 @@ a{
     display: none;
 }
 
+@media (max-width: 1315px) {
+    .hero{
+        justify-content: center;
+    }
+
+    .hero__slider{
+        margin-left: unset;
+    }
+
+    .hero__description{
+        margin-top: 50px;
+    }
+}
+
+
 
 @media (max-width: 769px) {
     .header__container{
@@ -404,12 +386,14 @@ a{
    
 
     .hero{
+        justify-content: space-between;
         margin-top: 54px;
     }
 
     .hero__description{
         max-width: 369px;
         margin-bottom: 0;
+        margin-top: unset;
     }
 
     .hero__slider{
@@ -419,20 +403,20 @@ a{
 
 
     .main-img{
+        object-fit: cover;
+        object-position: top;
         width: 100%;
         height: 360px;
-        object-fit: cover; 
-        object-position: top
     }
 
 
     .slider-img{
+        object-fit: cover;
+        object-position: top;
         width: 151px;
         height: 99px;
         max-width: unset;
         max-height: unset;
-        object-fit: cover;
-        object-position: top ;
     }
 
     .slides{
@@ -456,20 +440,16 @@ a{
     }
 
     .descr-title{
+        font: 700 28px/1 "Work Sans";
         color: #151C22;
-        font-family: "Work Sans";
-        font-size: 28px;
         font-style: normal;
-        font-weight: 700;
         line-height: normal;
     }
 
     .descr-text{
+        font: 400 14px/1 "Work Sans";
         color: #151C22;
-        font-family: "Work Sans";
-        font-size: 14px;
         font-style: normal;
-        font-weight: 400;
         line-height: normal;
         padding-right: 44px;
         padding-top: 29px;
@@ -495,9 +475,9 @@ a{
 
     .gallery-items{
         justify-content: center;
-        margin-top: 53px;
         row-gap: 47px;
         column-gap: 31.5px;
+        margin-top: 53px;
     }
 
     .gallery__title{
@@ -517,9 +497,9 @@ a{
     }
 
     .footer__menu{
+        justify-content: center;
         row-gap: 34px;
         margin-top: 31px;
-        justify-content: center;
     }
 
     .social-img{
@@ -539,21 +519,38 @@ a{
 }
 
 
+@media (max-width: 738px){
+    .hero{
+        justify-content: center;
+    }
+
+    .hero__slider{
+        margin-left: unset;
+    }
+
+}
+
+@media (max-width: 693px) {
+    .hero__description{
+        margin-top: 50px;
+    }
+}
+
 @media (max-width: 321px) {
-
-
     .burger{
         display: block;
+        position: relative;
         background-color: initial;
         border: none;
-        position: relative;
+
     }
 
     .burger__line{
+        position: absolute;
         width: 20px;
         height: 2px;
         background-color: #151C22;
-        position: absolute;
+
     }
 
     .burger__line:nth-child(1){
@@ -597,14 +594,14 @@ a{
     }
 
     .hero{
-        margin-top: 35px;
         justify-content: center;
+        margin-top: 35px;
     }
 
     .hero__slider{
-        width: 244px;
         display: flex;
         justify-content: center;
+        width: 244px;
         margin-left: unset;
     }
 
@@ -692,7 +689,7 @@ a{
 
     .gallery{
         margin-bottom: 65px;
-        margin-top: 53px;
+        margin-top: 52px;
     }
 
     .gallery__title{
@@ -704,10 +701,9 @@ a{
     }
 
     .gallery__container{
-        margin: 0 16px;
         display: flex;
         flex-direction: column;
-        
+        margin: 0 16px;
     }
 
     .gallery-img{
@@ -727,19 +723,17 @@ a{
 
     .gallery-items{
         gap: 28px;
-        margin-top: 35px;
         row-gap: 23px;
+        margin-top: 35px;
     }
 
     .gallery__view-new{
         display: inline-block;
         text-align: center;
         position: relative;
+        font: 500 16px/1 "Work Sans";
         color: #151C22;
-        font-family: "Work Sans";
-        font-size: 16px;
         font-style: normal;
-        font-weight: 500;
         line-height: normal;
         text-decoration: none;
         margin-top: 31px;
@@ -751,14 +745,13 @@ a{
         width: 24%;
         left: 110px;
         height: 2px;
-        background-color: #151C22;
         top: 21px;
+        background-color: #151C22;
     }
 
     .gallery__view-new-container{
         display: flex;
         justify-content: center;
-        
     }
 
     .footer__container{
@@ -766,9 +759,9 @@ a{
     }
 
     .footer__logo{
-        margin-top: 0;
-        padding: 0;
+        margin-top: -2px;
         margin-left: 15px;
+        padding: 0;
     }
 
     .footer__social{
@@ -777,10 +770,10 @@ a{
     }
 
     .footer__menu{
-        row-gap: 23px;
-        column-gap: 72px;
         justify-content: unset;
-        margin-top: 50px;
+        row-gap: 24px;
+        column-gap: 72px;
+        margin-top: 52px;
     }
 
     .footer__menu-item{
