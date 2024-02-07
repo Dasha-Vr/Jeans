@@ -1,24 +1,113 @@
-const colors = document.querySelectorAll('.descr-color');
-const sizes = document.querySelectorAll('.descr-size');
+
+// const prev = document.querySelector('.prev');
+// const next = document.querySelector('.next');
+// const sliderImg = document.querySelectorAll('.slider-img');
 
 
-colors.forEach((color) => {
-    color.addEventListener('click', () => {
-        colors.forEach((color) => {
-            color.classList.remove('descr-color--active');
-        })
-        color.classList.add('descr-color--active');
+//     function setOrder() {
+//         sliderImg.forEach((item, ind) => {
+//             if (item.classList.contains('big')) {
+//                 item.style.order = -1;
+//             }
+//             else {
+//                 item.style.order = ind;
+//             }
+//         });
+//     }
+
+
+//     function changeBig(newBig, bigImg) {
+//         bigImg.classList.remove('big');
+//         newBig.classList.add('big');
+//         setOrder();
+//     }
+
+
+//     function changeSlide(direction) {
+//         let bigImg = document.querySelector('.big');
+//         let bigInd = +bigImg.id;
+//         console.log(bigInd);
+//         let num;
+//         if (direction === 'prev') {
+//             num = (bigInd + 4) % 5;
+//         } else {
+//             num = (bigInd + 1) % 5;
+//         }
+//         changeBig(sliderImg[num], bigImg);
+//     }
+
+
+//     function changePicture(img, index) {
+//         if (!img.classList.contains('big')){
+//             let bigImg = document.querySelector('.big');
+//             changeBig(img, bigImg);
+//             bigImg.style.order = index;
+//         }
+//     }
+
+
+//     prev.addEventListener('click', () => changeSlide('prev'));
+
+//     next.addEventListener('click', () => changeSlide('next'));
+
+//     sliderImg.forEach((img, index) => {
+//         img.addEventListener('click', () => changePicture(img, index));
+//     })
+
+
+
+
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const sliderImg = document.querySelectorAll('.slider-img');
+
+
+    function setOrder() {
+        sliderImg.forEach((item, ind) => {
+            if (item.classList.contains('big')) {
+                item.style.order = -1;
+            }
+            else {
+                item.style.order = ind;
+            }
+        });
+    }
+
+
+    function changeBig(newBig, bigImg) {
+        bigImg.classList.remove('big');
+        newBig.classList.add('big');
+        setOrder();
+    }
+
+
+    function changeSlide(direction) {
+        let bigImg = document.querySelector('.big');
+        let bigInd = +bigImg.id;
+        console.log(bigInd);
+        let num;
+        if (direction === 'prev') {
+            num = (bigInd + 4) % 5;
+        } else {
+            num = (bigInd + 1) % 5;
+        }
+        changeBig(sliderImg[num], bigImg);
+    }
+
+
+    function changePicture(img, index) {
+        if (!img.classList.contains('big')){
+            let bigImg = document.querySelector('.big');
+            changeBig(img, bigImg);
+            bigImg.style.order = index;
+        }
+    }
+
+
+    prev.addEventListener('click', () => changeSlide('prev'));
+
+    next.addEventListener('click', () => changeSlide('next'));
+
+    sliderImg.forEach((img, index) => {
+        img.addEventListener('click', () => changePicture(img, index));
     })
-})
-
-
-sizes.forEach((size) => {
-    size.addEventListener('click', () => {
-        sizes.forEach((size) => {
-            size.classList.remove('descr-size--active');
-        })
-        size.classList.add('descr-size--active');
-    })
-})
-
-

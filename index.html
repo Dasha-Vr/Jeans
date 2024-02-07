@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="index.js"></script>
 </head>
-
 <body>
     <header class="header">
         <div class="container">
@@ -27,24 +26,24 @@
                 </ul>
                 <a href="#" class="header__logo"><img src="assets/svg/logo.svg" alt="logo"></a>
                 <ul class="header__nav">
-                    <li class="header__nav-item"><img src="assets/svg/search.svg" alt="search" class="search"></li>
-                    <li class="header__nav-item"><img src="assets/svg/basket.svg" alt="basket" class="basket"></li>
+                    <li class="header__nav-item"><img src="assets/svg/search.svg" class="search" alt="search"></li>
+                    <li class="header__nav-item"><img src="assets/svg/basket.svg" class="basket" alt="basket"></li>
                 </ul>
             </div>
         </div>
     </header>
     <main class="main">
-        <div class="container">
             <div class="hero">
+                <div class="container-descr-new">
                 <div class="hero__slider">
                     <div class="slider-container">
                         <button class="prev"><img class="prev-btn" src="assets/svg/arrow-left.svg" alt="arrow-left"></button>
                         <div class="images-container">
-                            <img src="assets/product-image-1.png" alt="product-image-1" class="big slider-img">
-                            <img src="assets/product-image-2.png" alt="product-image-2" class="slider-img">
-                            <img src="assets/product-image-3.png" alt="product-image-3" class="slider-img">
-                            <img src="assets/product-image-4.png" alt="product-image-4" class="slider-img">
-                            <img src="assets/product-image-5.png" alt="product-image-5" class="slider-img">
+                            <img src="assets/product-image-1.png" alt="product-image-1" id="0" class="big slider-img">
+                            <img src="assets/product-image-2.png" alt="product-image-2" id="1" class="slider-img">
+                            <img src="assets/product-image-3.png" alt="product-image-3" id="2" class="slider-img">
+                            <img src="assets/product-image-4.png" alt="product-image-4" id="3" class="slider-img">
+                            <img src="assets/product-image-5.png" alt="product-image-5" id="4" class="slider-img">
                         </div>
                         <button class="next"><img class="next-btn" src="assets/svg/arrow-right.svg" alt="arrow-right"></button>
                     </div>
@@ -54,28 +53,35 @@
                         <h2 class="descr-title">Overalls</h2>
                         <p class="descr-text">Overalls in washed organic cotton denim. Collar, button fly, and
                             adjustable belt at
-                            waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front and
+                            waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and
                             back pockets.</p>
                         <div class="descr-colors">Color</div>
                         <div class="colors-container">
-                            <div class="descr-color descr-color--blue descr-color--active"></div>
-                            <div class="descr-color descr-color--dark-blue"></div>
-                            <div class="descr-color descr-color--grey"></div>
+                            <input type="radio" class="descr-radio descr-color--blue" name="color" checked>
+                            <input type="radio" class="descr-radio descr-color--dark-blue" name="color">
+                            <input type="radio" class="descr-radio descr-color--grey" name="color">
                         </div>
                         <div class="descr-sizes">Size</div>
                         <div class="size-container">
-                            <p class="descr-size">XS</p>
-                            <p class="descr-size descr-size--active ">S</p>
-                            <p class="descr-size">M</p>
-                            <p class="descr-size">L</p>
-                            <p class="descr-size">XL</p>
+                            <input type="radio" id="option1" name="size" class="size-radio" style="display: none;">
+                            <label class="size-label" for="option1" style="cursor: pointer;">XS</label>
+                            <input type="radio" id="option2" name="size" class="size-radio" style="display: none;" checked>
+                            <label class="size-label" for="option2" style="cursor: pointer;">S</label>
+                            <input type="radio" id="option3" name="size" class="size-radio" style="display: none;">
+                            <label class="size-label" for="option3" style="cursor: pointer;">M</label>
+                            <input type="radio" id="option4" name="size" class="size-radio" style="display: none;">
+                            <label class="size-label" for="option4" style="cursor: pointer;">L</label>
+                            <input type="radio" id="option5" name="size" class="size-radio" style="display: none;">
+                            <label class="size-label" for="option5" style="cursor: pointer;">XL</label>
                         </div>
                         <div class="descr-price">$ 160</div>
                         <button class="descr-button">Add to cart</button>
                     </div>
                 </div>
             </div>
+            </div>
             <section class="gallery">
+                <div class="container">
                 <div class="gallery__container">
                     <div class="title-view-container">
                         <h2 class="gallery__title">You may also like</h2>
@@ -103,36 +109,33 @@
                             <p class="item-price">$ 60</p>
                         </div>
                     </div>
+                    <div class="gallery__view-new-container">
                     <a href="#" class="gallery__view-new">View all</a>
                 </div>
+                </div>
+                </div>
             </section>
-        </div>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="footer__container">
                 <ul class="footer__menu">
-                    <li class="footer__logo"><img src="assets/svg/footer-logo.svg" alt="footer-logo" class="footer-img"></a></li>
+                    <li class="footer__logo"><a href="#"><img src="assets/svg/footer-logo.svg" alt="footer-logo" class="footer-img"></a></li>
                     <li class="footer__menu-item"><a href="#" class="footer__menu-link">Shop</a></li>
                     <li class="footer__menu-item"><a href="#" class="footer__menu-link">Delivery</a></li>
                     <li class="footer__menu-item"><a href="#" class="footer__menu-link">Service</a></li>
                     <li class="footer__menu-item"><a href="#" class="footer__menu-link">Sitemap</a></li>
                     <li class="footer__menu-item"><a href="#" class="footer__menu-link">Contacts</a></li>
                 </ul>
-                <ul class="footer__social">
-                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img class="social-img"
-                                src="assets/svg/fb.svg" alt="fb"></a></li>
-                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img class="social-img"
-                                src="assets/svg/insta.svg" alt="insta"></a></li>
-                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img class="social-img"
-                                src="assets/svg/pinterest.svg" alt="pinterest"></a></li>
-                    <li class="footer__social-item"><a href="#" class="footer__social-link"><img class="social-img"
-                                src="assets/svg/twitter.svg" alt="twitter"></a></li>
-                </ul>
+                <div class="footer__social">
+                    <div class="footer__social-item facebook"><a href="#" class="footer__social-link"></a></div>
+                    <div class="footer__social-item insta"><a href="#" class="footer__social-link"></a></div>
+                    <div class="footer__social-item pinterest"><a href="#" class="footer__social-link"></a></div>
+                    <div class="footer__social-item twitter "><a href="#" class="footer__social-link"></a></div>
+                </div>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
